@@ -8,7 +8,7 @@ import org.springframework.context.ApplicationContext;
 
 import com.github.nachomezzadra.activemqclient.BaseSpringTest;
 
-public class SpringContextTest extends BaseSpringTest  {
+public class SpringConfigurationTest extends BaseSpringTest  {
 
 	@Autowired
 	ApplicationContext context;
