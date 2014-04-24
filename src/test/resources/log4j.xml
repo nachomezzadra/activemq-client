@@ -10,7 +10,7 @@
 		</layout>
 	</appender>
 	
-	<logger name="com.github.nachomezzadra">
+	<logger name="com.github.nachomezzadra.activemqclient">
 		<level value="INFO"/> 
 	</logger>
 	
