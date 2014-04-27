@@ -18,16 +18,8 @@ public class CustomPojo implements Serializable {
 		return name;
 	}
 
-	public void setName(String name) {
-		this.name = name;
-	}
-
 	public String getDescription() {
 		return description;
-	}
-
-	public void setDescription(String description) {
-		this.description = description;
 	}
 
 	@Override
@@ -53,17 +45,17 @@ public class CustomPojo implements Serializable {
 		}
 		CustomPojo other = (CustomPojo) obj;
 		if (description == null) {
-			if (other.description != null) {
+			if (other.getDescription() != null) {
 				return false;
 			}
-		} else if (!description.equals(other.description)) {
+		} else if (!description.equals(other.getDescription())) {
 			return false;
 		}
 		if (name == null) {
-			if (other.name != null) {
+			if (other.getName() != null) {
 				return false;
 			}
-		} else if (!name.equals(other.name)) {
+		} else if (!name.equals(other.getName())) {
 			return false;
 		}
 		return true;

@@ -31,8 +31,4 @@ public class ObjectMessageReceiver<T> implements MessageListener {
 		return receivedObject;
 	}
 
-	public void setReceivedObject(T receivedObject) {
-		this.receivedObject = receivedObject;
-	}
-
 }
