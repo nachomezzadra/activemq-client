@@ -1,10 +1,8 @@
 package com.github.nachomezzadra.activemqclient.jms;
 
-import java.util.Map;
-
 import org.springframework.jms.core.JmsTemplate;
 
-public class MessageSender {
+public class MessageSender<T> {
 
 	private final JmsTemplate jmsTemplate;
 
@@ -12,7 +10,7 @@ public class MessageSender {
 		this.jmsTemplate = jmsTemplate;
 	}
 
-	public void send(final Map<?, ?> map) {
-		jmsTemplate.convertAndSend(map);
+	public void send(final T object) {
+		jmsTemplate.convertAndSend(object);
 	}
 }
